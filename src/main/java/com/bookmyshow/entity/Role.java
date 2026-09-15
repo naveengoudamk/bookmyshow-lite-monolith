@@ -5,16 +5,13 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name = "movies")
-public class Movie {
+@Table(name = "roles")
+public class Role {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String title;
-
-    private String language;
-
-    private Integer duration;
+    @Column(nullable = false, unique = true)
+    private String name;
 }

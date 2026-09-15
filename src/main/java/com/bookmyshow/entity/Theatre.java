@@ -5,16 +5,16 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name = "movies")
-public class Movie {
+@Table(name = "theatres")
+public class Theatre {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String title;
+    private String name;
 
-    private String language;
+    private String city;
 
-    private Integer duration;
+    private String address;
 }
